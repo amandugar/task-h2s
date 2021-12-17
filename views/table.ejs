@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Team Name</th>
+      <th>Number</th>
+      <th>City</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% result.forEach(function(item) { %>
+    <tr>
+      <td><%= item.full_name %></td>
+      <td><%= item.email %></td>
+      <td><%= item.team_name %></td>
+      <td><%= item.number %></td>
+      <td><%= item.city %></td>
+      <td><%= item.url %></td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
